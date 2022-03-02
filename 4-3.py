@@ -11,7 +11,9 @@ count = 0
 
 
 for move in moves:
-    if row + move[0] > 0:
-        if column + move[1] > 0:
+    next_row = row + move[0]
+    next_column = column + move[1]
+    if next_row >= 1 and next_row <= 8:
+        if  next_column >= 1 and next_column <= 8> 0:
             count += 1
 print(count)
